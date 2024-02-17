@@ -1,0 +1,51 @@
+/* animation conditions & div color , size*/
+.comm{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 65px;
+    animation-name: nitish;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Ball backgraound color */
+.b1{
+    background: red;
+    animation-delay: 0s;
+}
+.b2{
+    background: green;
+    animation-delay: 0.5s;
+}
+.b3{
+    background: yellow;
+    animation-delay:1s;
+}
+.b4{
+    background: orangered;
+    animation-delay: 1.5s;
+}
+.b5{
+    background: palevioletred;
+    animation-delay: 2s;
+}
+/* effect on the animation */
+@keyframes nitish{
+    0%{
+        transform:translateY(0px);
+    }
+    30%{
+        background: mediumseagreen;
+    }
+    60%{
+        background: purple;
+    }
+    100%{
+        transform: translateY(600px);
+    }
+
+}
